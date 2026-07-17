@@ -1,0 +1,12 @@
+(ns atsurae.methods.test-social
+  (:require [atsurae.cells.social-post.state-machine :as state-machine]
+            [atsurae.methods.social :as social]
+            [clojure.test :refer [deftest is]]))
+
+(deftest shared-publication-adapter
+  (let [post (social/draft-observation-post "line" "observed" ["model" "ledger"])
+        state (state-machine/transition-to-drafted
+               {"subject" "line" "sources" ["model" "ledger"]})]
+    (is (= ":dry-run" (get post ":post/status")))
+    (is (false? (get post ":post/server-held-key")))
+    (is (= state-machine/phase-drafted (get-in state ["cell_state" "phase"])))))

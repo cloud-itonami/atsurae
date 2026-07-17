@@ -1,0 +1,12 @@
+{:paths ["src" "test"]
+ :deps {com.etzhayyim/kotoba-datom
+        {:git/url "https://github.com/etzhayyim/com-etzhayyim-kotoba-datom.git"
+         :git/sha "3c4b3b92234e59ba285119fd8b2ca4c2ee172ff8"}
+        com.etzhayyim/social-publication
+        {:git/url "https://github.com/etzhayyim/com-etzhayyim-social-publication.git"
+         :git/sha "e8127d0661284b1c12ce1b216c84b5ed2db619ab"}}
+ :tasks {test {:task (load-file "run_tests.clj")}
+         model {:task (do (require 'atsurae.methods.feature-model)
+                          ((resolve 'atsurae.methods.feature-model/-main)))}
+         heartbeat {:task (do (require 'atsurae.methods.autorun)
+                              ((resolve 'atsurae.methods.autorun/-main)))}}}

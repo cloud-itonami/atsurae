@@ -1,0 +1,12 @@
+(require '[clojure.test :as t])
+
+(def suites
+  '[atsurae.methods.test-feature-model
+    atsurae.methods.test-autorun
+    atsurae.methods.test-social])
+
+(apply require suites)
+(let [{:keys [fail error] :as result} (apply t/run-tests suites)]
+  (println (select-keys result [:test :pass :fail :error]))
+  (when (pos? (+ fail error))
+    (System/exit 1)))
