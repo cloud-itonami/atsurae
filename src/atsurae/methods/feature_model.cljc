@@ -30,7 +30,7 @@
   variation-points   features with 0 < commonality < 1 (where the family actually varies)
   derive-bom         a variant's bill of materials (parts ∪ from selected features, qty summed)"
   (:require [clojure.set :as set]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.edn :as edn]
             #?(:clj [clojure.java.io :as io])))
 

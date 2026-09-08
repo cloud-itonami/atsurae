@@ -6,7 +6,7 @@
   :atsurae/derived + :atsurae/sourcing. G1/G2: no :atsurae/license-lock, :atsurae/drm, or
   :atsurae/manufacture attribute is ever emitted (a feature model is a commons spec, not a
   license key, and atsurae never builds — structurally enforced + tested)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [atsurae.methods.feature-model :as fm]))
 
 (defn- add [e a v] [":db/add" e a v])

@@ -5,7 +5,7 @@
   (:require [atsurae.methods.feature-model :as fm]
             [atsurae.methods.autorun :as a]
             [atsurae.methods.kotoba :as k]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing run-tests]]
             #?(:clj [clojure.java.io :as io])))
 
