@@ -4,7 +4,7 @@
 (ns atsurae.methods.test-feature-model
   (:require [atsurae.methods.feature-model :as fm]
             [atsurae.methods.emit :as emit]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing run-tests]]))
 
 (def seed-path "kotoba/seed.edn")
