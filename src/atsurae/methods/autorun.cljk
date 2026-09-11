@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; atsurae 誂え — autonomous heartbeat: analyze product line → append datoms to the ledger.
 (ns atsurae.methods.autorun
   "autorun.cljc — atsurae 誂え deterministic heartbeat (ADR-2606212010).

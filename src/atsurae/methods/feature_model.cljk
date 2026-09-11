@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; atsurae 誂え — Product Line Engineering (PLE) feature-model engine (clj-native, pure stdlib).
 (ns atsurae.methods.feature-model
   "atsurae 誂え — the Product Line Engineering (PLE) feature-model engine the roster lacked

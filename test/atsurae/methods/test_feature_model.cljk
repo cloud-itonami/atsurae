@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; atsurae 誂え — PLE feature-model tests (incl. constraint-satisfaction + commons-not-license).
 ;; Run: bb test
 (ns atsurae.methods.test-feature-model

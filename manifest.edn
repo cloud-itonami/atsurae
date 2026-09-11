@@ -67,7 +67,7 @@
 
  :actor/tests
  {:runner "babashka"
-  :cmd "bb test"
+  :cmd "kbb -M:test"
   :verification {:tests 12 :assertions 44 :failures 0 :errors 0}
   :suites ["atsurae.methods.test-feature-model"
            "atsurae.methods.test-autorun"
