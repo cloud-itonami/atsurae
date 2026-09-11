@@ -34,10 +34,10 @@
   {:n/id "N5" :n/rule "R0 enumerates a bounded variant space; very large feature models (>16-wide or-groups) need staged/SAT enumeration (R1)"}]
 
  :actor/methods
- [{:method/id "feature_model" :method/file "src/atsurae/methods/feature_model.cljc" :method/role "load + valid-config? + variants + commonality + variation-points + derive-bom + report (+ bb CLI)"}
-  {:method/id "emit"          :method/file "src/atsurae/methods/emit.cljc"          :method/role "amime-style EAVT ledger datoms (per-feature commonality + line summary)"}
-  {:method/id "kotoba"        :method/file "src/atsurae/methods/kotoba.cljc"        :method/role "content-addressed append-only PRODUCT-LINE LEDGER (tx-cid/make-tx/append-tx/read-log/verify-chain)"}
-  {:method/id "autorun"       :method/file "src/atsurae/methods/autorun.cljc"       :method/role "deterministic, idempotent-by-content heartbeat — analyze → append ONLY on change (+ bb CLI)"}]
+ [{:method/id "feature_model" :method/file "src/atsurae/methods/feature_model.cljk" :method/role "load + valid-config? + variants + commonality + variation-points + derive-bom + report (+ bb CLI)"}
+  {:method/id "emit"          :method/file "src/atsurae/methods/emit.cljk"          :method/role "amime-style EAVT ledger datoms (per-feature commonality + line summary)"}
+  {:method/id "kotoba"        :method/file "src/atsurae/methods/kotoba.cljk"        :method/role "content-addressed append-only PRODUCT-LINE LEDGER (tx-cid/make-tx/append-tx/read-log/verify-chain)"}
+  {:method/id "autorun"       :method/file "src/atsurae/methods/autorun.cljk"       :method/role "deterministic, idempotent-by-content heartbeat — analyze → append ONLY on change (+ bb CLI)"}]
 
  :actor/lex
  [{:lex/id "featureModel"}
