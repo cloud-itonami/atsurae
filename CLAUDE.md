@@ -21,7 +21,7 @@ Council gate). Validity is **structural** constraint satisfaction, not a good/ba
 - **CONSTRAINT** `{:kind :from :to}` — `:requires` (A⇒B) / `:excludes` (¬(A∧B)).
 - **BINDING** `{:feature :parts [{:part :qty}…]}` — feature → parts for BOM derivation.
 
-## What it computes (`src/atsurae/methods/feature_model.cljc`)
+## What it computes (`src/atsurae/methods/feature_model.cljk`)
 
 - `valid-config?` — structural cardinalities (mandatory / xor / or / orphan) + cross-tree
   constraints → `{:valid? :violations}`.
@@ -59,10 +59,10 @@ sanae / hataori / kiyome / giemon / sarutahiko / funadaiku  — under Council ga
 ## Files
 
 ```
-src/atsurae/methods/feature_model.cljc  load + valid-config? + variants + commonality + variation-points + derive-bom + report
-src/atsurae/methods/emit.cljc           per-feature commonality + line-summary EAVT datoms (G1/G2 negative space enforced)
-src/atsurae/methods/kotoba.cljc         content-addressed append-only PRODUCT-LINE LEDGER (tamper-evident commit-DAG)
-src/atsurae/methods/autorun.cljc        deterministic, idempotent-by-content heartbeat — analyze → append ONLY on change
+src/atsurae/methods/feature_model.cljk  load + valid-config? + variants + commonality + variation-points + derive-bom + report
+src/atsurae/methods/emit.cljk           per-feature commonality + line-summary EAVT datoms (G1/G2 negative space enforced)
+src/atsurae/methods/kotoba.cljk         content-addressed append-only PRODUCT-LINE LEDGER (tamper-evident commit-DAG)
+src/atsurae/methods/autorun.cljk        deterministic, idempotent-by-content heartbeat — analyze → append ONLY on change
 test/atsurae/methods/  cardinalities + constraints + commonality + BOM + G1/G2 invariants
 kotoba/ontology.atsurae.edn EAVT schema + enums + negative space (license-lock/drm/manufacture unrepresentable)
 kotoba/seed.edn             synthetic 15-feature OSS-robotics mobility-base line
