@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; atsurae 誂え — ledger + heartbeat tests (content-addressed, idempotent-by-content).
 ;; Run: bb test
 (ns atsurae.methods.test-autorun

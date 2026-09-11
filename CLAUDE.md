@@ -73,9 +73,9 @@ manifest.edn                gates G1–G7 + non-goals N1–N5
 ## Run
 
 ```bash
-bb test       # 3 suites (12 tests / 44 assertions)
-bb model      # print the product-line report
-bb heartbeat  # heartbeat → append to the local ledger
+kbb -M:test       # 3 suites (12 tests / 44 assertions)
+kbb -M:model      # print the product-line report
+kbb -M:heartbeat  # heartbeat → append to the local ledger
 ```
 
 ## Pairs with

@@ -9,8 +9,8 @@ A **commons spec, never a license key**. **Spec + derivation only** — atsurae 
 (the manufacturing actors build, under Council gate). Validity is **structural**, not a verdict.
 
 ```bash
-bb test   # 12 tests / 44 assertions
-bb model  # product-line report
+kbb -M:test   # 12 tests / 44 assertions
+kbb -M:model  # product-line report
 ```
 
 - ADR-2606212010 · clj-native R0 · `com.etzhayyim.atsurae.*`

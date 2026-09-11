@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; atsurae 誂え — datom emission for the product-line ledger.
 (ns atsurae.methods.emit
   "atsurae 誂え — emission layer (ADR-2606212010). Pure `datoms` → append-only EAVT [op e a v]
