@@ -1,7 +1,7 @@
 (ns atsurae.methods.test-social
   (:require [atsurae.cells.social-post.state-machine :as state-machine]
             [atsurae.methods.social :as social]
-            [clojure.test :refer [deftest is]]))
+            [kotoba.test :refer [deftest is]]))
 
 (deftest shared-publication-adapter
   (let [post (social/draft-observation-post "line" "observed" ["model" "ledger"])
