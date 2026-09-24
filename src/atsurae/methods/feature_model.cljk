@@ -31,7 +31,7 @@
   derive-bom         a variant's bill of materials (parts ∪ from selected features, qty summed)"
   (:require [clojure.set :as set]
             [kotoba.lang.text :as str]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             #?(:clj [clojure.java.io :as io])))
 
 ;; ── load ─────────────────────────────────────────────────────────────────────
@@ -68,7 +68,7 @@
      :constraints (vec (filter #(= (:type %) :constraint) rows))
      :bindings    (vec (filter #(= (:type %) :binding) rows))}))
 
-#?(:clj (defn load-edn [path] (clojure.edn/read-string (slurp path))))
+#?(:clj (defn load-edn [path] (kotoba.lang.edn/read-string (slurp path))))
 
 (defn- by-id [features] (into {} (map (juxt :id identity) features)))
 (defn- children [features id] (filter #(= id (:parent %)) features))

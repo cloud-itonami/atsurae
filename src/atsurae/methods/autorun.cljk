@@ -15,7 +15,7 @@
   (:require [atsurae.methods.feature-model :as fm]
             [atsurae.methods.emit :as emit]
             [atsurae.methods.kotoba :as k]
-            #?(:clj [clojure.edn :as edn])))
+            #?(:clj [kotoba.lang.edn :as edn])))
 
 (defn beat
   "Run one heartbeat. opts: :model :tx-id :as-of :log-path (all required).
