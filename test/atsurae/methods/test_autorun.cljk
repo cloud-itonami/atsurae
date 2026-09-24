@@ -7,7 +7,7 @@
             [atsurae.methods.kotoba :as k]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is testing run-tests]]
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (def seed-path "kotoba/seed.edn")
 (defn- model [] (fm/classify (fm/load-edn seed-path)))
