@@ -2,3 +2,4 @@ data/persisted/
 .cpcache/
 __pycache__/
 *.pyc
+.nbb/

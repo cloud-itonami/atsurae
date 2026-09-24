@@ -5,7 +5,7 @@
   (:require [atsurae.methods.feature-model :as fm]
             [atsurae.methods.emit :as emit]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is testing run-tests]]))
+            [kotoba.test :refer [deftest is testing run-tests]]))
 
 (def seed-path "kotoba/seed.edn")
 (defn- model [] (fm/classify (fm/load-edn seed-path)))

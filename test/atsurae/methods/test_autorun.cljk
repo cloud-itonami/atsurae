@@ -6,7 +6,7 @@
             [atsurae.methods.autorun :as a]
             [atsurae.methods.kotoba :as k]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is testing run-tests]]
+            [kotoba.test :refer [deftest is testing run-tests]]
             #?(:clj [clojure.java.io :as io])))
 
 (def seed-path "kotoba/seed.edn")
