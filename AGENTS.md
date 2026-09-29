@@ -1,4 +1,4 @@
-# atsurae — CLAUDE.md
+# atsurae — AGENTS.md
 
 ## What this is
 

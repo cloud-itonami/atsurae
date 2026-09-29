@@ -15,4 +15,4 @@ kbb -M:model  # product-line report
 
 - ADR-2606212010 · clj-native R0 · `com.etzhayyim.atsurae.*`
 - 15-feature synthetic OSS-robotics seed → **176** valid variants; platform = {robot-base, locomotion, power}.
-- See `CLAUDE.md` for the model, invariants, and composition diagram.
+- See `AGENTS.md` for the model, invariants, and composition diagram.
